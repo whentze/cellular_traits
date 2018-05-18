@@ -1,3 +1,5 @@
+pub mod rulesets;
+
 pub trait RuleSet {
     type Cell : Default + Copy + PartialEq + Send + Sync;
     fn step(neighborhood: [[<Self as RuleSet>::Cell; 3]; 3]) -> <Self as RuleSet>::Cell; 
