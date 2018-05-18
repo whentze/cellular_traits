@@ -15,7 +15,7 @@ impl RuleSet for Diffusion {
     }
 }
 
-#[derive(Clone, Copy, PartialEq, Eq)]
+#[derive(Clone, Copy, PartialEq, Eq, Debug)]
 pub enum BinaryCell {
     Live,
     Dead,
